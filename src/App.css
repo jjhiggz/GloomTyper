@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&family=Special+Elite&display=swap');
+  .incorrect{
+    color:red;
+    text-decoration: line-through;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .correct{
+    color:green
   }
-  to {
-    transform: rotate(360deg);
+  #game{
+    display: flex;
+    flex-direction: column;
+    text-align:right;
+    overflow:hidden;
+    white-space: nowrap;
   }
-}
+  #test-input{
+    width:100px;
+    position:absolute;
+    /* display: none; */
+    border-width:0px;
+  }
+  .input-wrapper{
+    text-align:right;
+    white-space: nowrap;
+    max-width:50%;
+    min-width: 50%;
+  }
+  .test-input-group{
+    float:right;
+    min-width: 100%;
+    white-space: nowrap;
+    overflow:hidden;
+  }
+  .test-wrapper{
+    max-width: 50%;
+  }
+  .test-prompt{
+    float:left;
+    max-width: 100%;
+  }
+
+  .game-container{
+    color:black;
+    display: flex;
+    border-color:white;
+
+    overflow:hidden;
+    max-height:300px
+  }
+  span{
+    padding-left: 5px;
+    font-family:'Special Elite';
+    font-size: 30px;
+  }
